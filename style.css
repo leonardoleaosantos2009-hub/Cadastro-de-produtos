@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f5;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.campo {
+  margin-bottom: 12px;
+}
+.campo label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.campo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0066cc;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #004c99;
+}
+
+.btn-secundario {
+  background: #6c757d;
+}
+.btn-secundario:hover {
+  background: #565e64;
+}
+
+.tabela-produtos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabela-produtos th,
+.tabela-produtos td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-edit {
+  background: #ffc107;
+  color: #212529;
+  padding: 6px 12px;
+  margin-right: 6px;
+  font-size: 0.85em;
+}
+
+.btn-delete {
+  background: #dc3545;
+  padding: 6px 12px;
+  font-size: 0.85em;
+}
+
+.status-alerta {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: none;
+}

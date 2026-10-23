@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de produtos</h1>
+
+      <!-- Formulário Dinâmico: Cadastro e Edição -->
+      <form id="formproduto" class="card">
+        <input type="hidden" id="produtoId" />
+
+        <div class="campo">
+          <label for="nome">Nome do Produto:</label>
+          <input type="text" id="nome" required placeholder="Ex: " />
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" required placeholder="Ex: " />
+        </div>
+
+        <div class="campo">
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" required placeholder="Ex: " />
+        </div>
+
+        <div class="campo">
+          <label for="preco">Preço:</label>
+          <input type="number" id="preco" required placeholder="Ex: " />
+        </div>
+
+        <div class="botoes-form">
+          <button type="submit" id="btnSalvar">Cadastrar</button>
+          <button
+            type="button"
+            id="btnCancelar"
+            class="btn-secundario"
+            style="display: none"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
+
+      <!-- Feedback visual -->
+      <div id="statusMensagem" class="status-alerta"></div>
+
+      <!-- Tabela de Listagem -->
+      <div class="card">
+        <h2>produtos Cadastrados</h2>
+        <table class="tabela-produtos">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Quantidade</th>
+              <th>Preço</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaCorpo"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Axios via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Lógica da Aplicação -->
+    <script src="app.js"></script>
+  </body>
+</html>
